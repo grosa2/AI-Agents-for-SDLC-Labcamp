@@ -46,7 +46,7 @@ Good luck and have fun! 🎉
 
 ## 🔗 Some useful links
 
-- [More on LLM agents](https://www.promptingguide.ai/it/research/llm-agents)
 - [More on agents reasoning](https://www.promptingguide.ai/it/techniques/react)
 - [More on OpenAI assistants APIs](https://platform.openai.com/docs/assistants/overview)
 - [Production-ready agents framework](https://www.langchain.com/langgraph)
+- [More on LLM agents](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
