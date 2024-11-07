@@ -1,7 +1,7 @@
 # Task 3 - Git Assistant
 
 ## What:
-Setup an agent able to interact with local git repositories to extract bug-fixing commits
+Setup an agent able to interact with local git repositories to extract bug-fixing commits from a provided input git repository.
 
 ## How:
 - Setup an agent using OpenAI Assistants playground with tool calling enabled
@@ -9,10 +9,17 @@ Setup an agent able to interact with local git repositories to extract bug-fixin
     - A function to execute commands via git client
     - *Optional:* a Function to list files and folders in the agent working directory, to clone the repository if not present
 - Implement the functions and integrate them with the provided agent template (`openai_assistant.ipynb`)
-- Extract all the bug fix commits from the provided git repository that closed a GitHub issue (hint: use git log!). The agent should return the commit hash, the issue number, and the commit message.
-- *Optional:* Extract the fix commits with a message referencing the bug-inducing commit hash. An example is a commit message like "Fix bug introduced in commit 12a45b7."
+- **Extract all the bug fix commits from the provided git repository that closed a GitHub issue for the repository [`grosa2/genai-stack`](https://github.com/grosa2/genai-stack)** (hint: use git log!). The agent should return the commit hash, the issue number, and the commit message.
+- *Optional:* Extract the fix commits with a message referencing the bug-inducing commit hash for the repository [`grosa2/Perpetual`](https://github.com/grosa2/Perpetual). An example is a commit message like "Fix bug introduced in commit 12a45b7."
 
 **Hint:** To implement the git client function, you can use the `subprocess` module in Python to execute shell commands. For example, `subprocess.run("git " + <command arguments>...` executes the git command with the provided arguments. In this way you provide the agent with the git tool where it passess the arguments that will be added to the git command.
+
+The notebook `openai_assistant_git_fast_start.ipynb` contains a fast start template to implement the git client agent.
+
+There are other repositories where you test the git agent:
+- [qbeslab/atlantic-signatures](https://github.com/qbeslab/atlantic-signatures)
+- [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j)
+- [i-am-bee/bee-agent-framework](https://github.com/i-am-bee/bee-agent-framework)
 
 
 ## Example session:
