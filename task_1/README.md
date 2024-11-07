@@ -6,7 +6,7 @@ Setup a basic agent able to process data from an input document using the code i
 ## How:
 - Setup an agent using OpenAI Assistants playground
 - Enable the code interpreter tool
-- Use the agent to process data from the input document. Specifically:
+- **Use the agent to process data from the input document**. Specifically:
     - Extract the response time and timestamp of each request
     - Build an anomaly detection model to identify anomalous requests (based on response time)
     - Generate a plot of the response times over time

@@ -1,0 +1,11 @@
+User
+Extract the values of response time from the input logs file. The value is the last number reported in each row
+
+User
+extract it for 100 rows, then use an anomaly detection algorithm to find anomalous values
+
+User
+do the same again, but this time report the timestamp corresponding to each response time (it is reported at the beginning of each row)
+
+User
+provide a line plot of the response times over time for the first 100 entries
